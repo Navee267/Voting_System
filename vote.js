@@ -1,7 +1,7 @@
 
 
 document.addEventListener("DOMContentLoaded",function(){
-    fetch("https://localhost:9090/votingsystem/candidates")
+    fetch("http://localhost:9090/votingsystem/candidates")
     .then((res) => res.json())
     .then((candidates) => {
         let candidateBox = document.querySelector(".candidateId");
@@ -24,7 +24,7 @@ voteForm.addEventListener("submit",function(event){
     let voterIdInput = document.querySelector(".voterId");
     let emailIdInput = document.querySelector(".emailId");
 
-    fetch("https://localhost:9090/votingsystem")
+    fetch("http://localhost:9090/votingsystem")
         .then((res) => res.json())
         .then((votes) => {
             let voteExists = votes.some(vote => vote.voterId === voterIdInput.value || vote.emailId === emailIdInput.value);
