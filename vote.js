@@ -24,7 +24,7 @@ voteForm.addEventListener("submit",function(event){
     let voterIdInput = document.querySelector(".voterId");
     let emailIdInput = document.querySelector(".emailId");
 
-    fetch("http://localhost:9090/votingsystem")
+    fetch("https://localhost:9090/votingsystem")
         .then((res) => res.json())
         .then((votes) => {
             let voteExists = votes.some(vote => vote.voterId === voterIdInput.value || vote.emailId === emailIdInput.value);
