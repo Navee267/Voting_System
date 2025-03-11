@@ -7,7 +7,7 @@ let images = [
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("http://localhost:9090/votingsystem/candidates")
+    fetch("https://localhost:9090/votingsystem/candidates")
         .then((res) => res.json())
         .then((candidates) => {
             let candidateDivs = document.querySelectorAll(".candidates > div");
