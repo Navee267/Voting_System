@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        fetch("http://localhost:9090/votingsystem/users")
+        fetch("https://localhost:9090/votingsystem/users")
             .then((res) => res.json())
             .then((users) => {
                 let userExists = users.some(user => user.userEmail === email.value);
@@ -32,7 +32,7 @@ loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
     let emailInput = document.querySelector(".userEmail");
     let passInput = document.querySelector(".passwordInput");
-    fetch("http://localhost:9090/votingsystem/users")
+    fetch("https://localhost:9090/votingsystem/users")
         .then((res) => res.json())
         .then((users) => {
             let userExists = users.some(user => user.userEmail === emailInput.value && user.userPassword === passInput.value);
