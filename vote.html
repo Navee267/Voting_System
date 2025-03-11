@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Now</title>
+    <link rel="stylesheet" href="vote.css">
+</head>
+<body>
+
+    <nav>
+        <h2>Voting System</h2>
+        <ul>
+            <a href="home.html">
+                <li>Home</li>
+            </a>
+            <a href="candidate.html">
+                <li>Candidates</li>
+            </a>
+            <a href="vote.html">
+                <li>Vote Now</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box">
+        <form action="http://localhost:9090/votingsystem/add" method="post" class="voteForm">
+            <h2>Vote Now</h2>
+            <input type="number" name="voterId" placeholder="Enter Your Voter Id" class="voterId">
+            <input type="email" name="emailId" placeholder="Enter Your EmailId" class="emailId">
+            <input type="text" name="name" placeholder="Enter Your Name">
+            <input type="text" name="dob" placeholder="Enter Your DOB">
+            <label for="candidateId">Select The Candidate</label>
+            <select name="candidateId" class="candidateId">
+    
+            </select>
+            <a href="result.html"><button type="submit">Vote Now</button></a>
+        </form>
+        </div>
+    </div>
+
+    <script src="vote.js"></script>
+</body>
+</html>

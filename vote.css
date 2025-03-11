@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    box-shadow:inset rgba(22, 209, 200, 0.16) 0px 1px 4px,inset rgb(5, 196, 225) 0px 0px 0px 3px;
+}
+
+nav h2 {
+    color: aqua;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 10px;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 9px;
+    transition: .7s;
+}
+
+nav ul li:hover {
+    color: rgb(23, 27, 25);
+    background-color: rgb(8, 212, 248);
+}
+
+nav ul a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.container{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background: rgb(34,194,195);
+    background: linear-gradient(0deg, rgba(34,194,195,1) 14%, rgba(48,98,210,1) 84%);
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+form input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+form label{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 10px;
+}
+
+form h2{
+    color: white;
+    margin-bottom: 15px;
+}
+
+form select{
+    background: aqua;
+    border: none;
+    box-shadow:inset rgb(37, 179, 172) 0px 1px 4px,inset rgb(5, 196, 225) 0px 0px 0px 3px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 15px;
+}
+
+form button {
+    width: 150px;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+form button:hover {
+    background-color: rgb(170, 194, 215);
+}
